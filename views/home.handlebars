@@ -1,16 +1,22 @@
 <!-- Loop over each object in the blogs array -->
 {{#each blogs as |blog| }}
-<div class="row mb-4 blog">
-  <div class="col-md-5">
-    <h2>
-      <a href="/blog/{{blog.id}}">{{blog.name}}</a>
-    </h2>
-    <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+<div class="col-md-8 blog-box">
+  <div class="row">
+    <div class="col-md-12">
+      <div >
+        <p class="blog-title"><a href="/blog/{{blog.id}}">{{blog.name}}</a></p>
+        <p class="blog-owner">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-7 description">
-    <p>
-      {{blog.description}}
-    </p>
+  <hr id="break">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="blog-description"></p>{{blog.description}}</p>
+    </div>
   </div>
 </div>
 {{/each}}
+
+    
+
