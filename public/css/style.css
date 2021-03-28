@@ -1,0 +1,35 @@
+.jumbotron {
+  text-align: center;
+  background-color: #939597;
+  padding: 10px 0px 10px 0px;
+  height: 100px;
+}
+
+.jumbotron, h1 {
+  margin: 0;
+  padding-top: 5px;
+  color: rgb(193, 196, 36);
+}
+
+.navbar {
+  background-color: #0072B5;
+}
+
+.nav {
+  float:left;
+  margin-right: 20px;
+}
+
+.nav-btn {
+  margin-right: 20px;
+  width: 150px;
+
+}
+
+.nav-btn:first-child {
+  margin-left: 20px;
+}
+
+.description {
+  border: solid 2px black;
+}
