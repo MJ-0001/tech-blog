@@ -1,13 +1,22 @@
-.jumbotron {
-  text-align: center;
-  background-color: #939597;
-  padding: 10px 0px 10px 0px;
-  height: 100px;
+* {
+  font-family: 'Open Sans', sans-serif;
 }
 
-.jumbotron, h1 {
+.jumbotron {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  height: 100%;
+  background-image: url(../images/jumb-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+.jumbotron h1 {
   margin: 0;
-  padding-top: 5px;
+  padding: 5px 0px 10px 0px;
   color: rgb(193, 196, 36);
 }
 
@@ -30,6 +39,40 @@
   margin-left: 20px;
 }
 
-.description {
+body {
+  background-color: #939597;
+}
+
+.login {
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+.blog-box {
   border: solid 2px black;
+  border-radius: 5px;
+}
+
+.blog-title {
+  float: left;
+  margin: 5px;
+  padding-left: 5px;
+}
+
+.blog-owner {
+  float: right;
+  margin: 5px;
+}
+
+#break {
+  margin-top: 5px;
+}
+
+.blog-description {
+  float: left;
+  margin: 5px;
+}
+
+#delete {
+  float: right;
 }
