@@ -1,7 +1,6 @@
-<div class="row">
-  <div class="col-md-6">
+{{!-- <div class="row">
+  <div class="col-md-4 login">
     <h2>Login</h2>
-
     <form class="form login-form">
       <div class="form-group">
         <label for="email-login">email:</label>
@@ -15,9 +14,9 @@
         <button class="btn btn-primary" type="submit">login</button>
       </div>
     </form>
-  </div>
+  </div> --}}
 
-  <div class="col-md-6">
+  {{!-- <div class="col-md-4 signin">
     <h2>Signup</h2>
     <form class="form signup-form">
       <div class="form-group">
@@ -37,6 +36,46 @@
       </div>
     </form>
   </div>
+</div> --}}
+
+<div class="row">
+  <div class="col-md-6 login mb-3">
+    <h2>Login</h2>
+    <form class="login-form">
+      <div class="form-group">
+        <label for="email-login">Email</label>
+        <input id="email-login" type="email" class="form-control mt-2" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label class="mt-2" for="password-login">Password</label>
+        <input id="password-login" type="password" class="form-control mt-2">
+      </div>
+      <button type="submit" class="btn btn-primary mt-4 mb-3">Login</button>
+    </form>
+  </div>
 </div>
+<hr>
+<div class="row">
+  <div class="col-md-6 signup mt-3">
+    <h2>Sign-up</h2>
+    <form class="signup-form mb-3">
+      <div class="form-group">
+        <label for="name-signup">Name</label>
+        <input id="name-signup" type="text" class="form-control mt-2 mb-3" >
+      </div>
+      <div class="form-group">
+        <label for="email-signup">Email</label>
+        <input id="email-signup" type="text" class="form-control mt-2" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label class="mt-2" for="password-signup">Password</label>
+        <input id="password-signup" type="text" class="form-control mt-2" >
+      </div>
+      <button type="submit" class="btn btn-primary mt-4">Sign-up</button>
+    </form>
+  </div>
+</div>    
 
 <script src="./js/login.js"></script>
