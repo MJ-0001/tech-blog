@@ -27,25 +27,33 @@
 <hr>
 <div class="row mt-4">
   <div class="col-md-6">
+    <h3>Current Blogs:</h3>
+  </div>
+</div>
+
     {{#if blogs.length}}
-
     <div class="blog-list">
-      <h3>Current Blogs:</h3>
-
+      
       {{#each blogs as |blog|}}
       <div class="row mb-2">
-        <div class="col-md-8">
+        <div class="col-md-3">
           <h4 class="mt-2"><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
         </div>
-        <div class="col-md-4">
-          <button id="delete" class="btn btn-sm btn-danger mt-2" data-id="{{blog.id}}">DELETE</button>
+        <div class="col-md-3">
+          <form class="my-buttons">
+            <input type="hidden" class="form-control my-buttons" id="edit-hidden" value="{{blog.id}}">
+            <button id="updateBtn" class="btn btn-sm btn-success mt-2" data-id="{{blog.id}}">UPDATE</button>
+          </form>
+          <div class="my-buttons">
+            <button id="delete" class="btn btn-sm btn-danger mt-2" data-id="{{blog.id}}">DELETE</button>
+          </div>
         </div>
       </div>
       {{/each}}
 
     </div>
     {{/if}}
-  </div>
-</div>
 
-<script src="./js/dashboard.js"></script>
+<script src="./js/create-blog.js"></script>
+<script src="./js/update-blog.js"></script>
+<script src="./js/delete-blog.js"></script>
