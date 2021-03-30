@@ -73,6 +73,7 @@ body {
   margin: 5px;
 }
 
-#delete {
+.my-buttons {
   float: right;
+  margin-left: 10px;
 }
