@@ -1,4 +1,8 @@
+const deleteBtn = document.querySelector('#deleteBtn');
+
 const delButtonHandler = async (event) => {
+  event.preventDefault();
+
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
@@ -14,7 +18,4 @@ const delButtonHandler = async (event) => {
   }
 };
 
-
-document
-  .querySelector('.blog-list')
-  .addEventListener('click', delButtonHandler);
+deleteBtn.addEventListener('click', delButtonHandler);
