@@ -11,8 +11,8 @@
 - [Questions](#questions)
 - [License](#license)
 ---
-## Demo of deployed app:
-![Demo]()
+## Screenshot of deployed app:
+![Demo](./public/images/screenshot.png)
 
 ## Description:
 ```
